@@ -1,28 +1,21 @@
 import React from "react";
-import { useQuery } from "@apollo/client";
-
-// {
-//     launchesPast(limit: 1) {
-//       mission_name
-//       launch_site {
-//         site_name_long
-//       }
-//       links {
-//         flickr_images
-//       }
-//       rocket {
-//         rocket {
-//           id
-//           name
-//         }
-//       }
-//       launch_year
-//       details
-//     }
-//   }
+import { useMissions } from "../hooks/useMissions";
 
 function Missions() {
-  return <>mission</>;
+  const { error, loading, data } = useMissions();
+
+  if (loading) return <p>Loading...</p>;
+
+  const launches = data.launchesPast;
+
+  console.log(launches);
+  return (
+    <>
+      {launches.map((launch) => (
+        <p key={launch.mission_id}>Launch name: {launch.mission_name}</p>
+      ))}
+    </>
+  );
 }
 
 export default Missions;
