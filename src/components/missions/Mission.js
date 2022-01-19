@@ -1,6 +1,5 @@
 import React from "react";
 import Paper from "@mui/material/Paper";
-import { NavLink } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { Image } from "./MissionStyled";
@@ -25,7 +24,11 @@ function Mission({ launch }) {
             <b>Launch year:</b> {launch.launch_year}
           </Typography>
 
-          <Details title={launch.mission_name} details={launch.details} />
+          <Details
+            title={launch.mission_name}
+            details={launch.details}
+            rocketPath={launch.rocket.rocket.id}
+          />
         </Box>
       </Paper>
     </Grid>
