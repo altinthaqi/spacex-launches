@@ -4,10 +4,9 @@ import LinkItem from "./LinkItem";
 
 function Links() {
   const rocketLinks = [
-    { id: "1", rocketPath: "/falcon1", rocketName: "Falcon 1" },
-    { id: "2", rocketPath: "/falcon9", rocketName: "Falcon 9" },
-    { id: "3", rocketPath: "/falconheavy", rocketName: "Falcon Heavy" },
-    { id: "4", rocketPath: "/starship", rocketName: "Starship" },
+    { id: "1", rocketPath: "/falcon9", rocketName: "Falcon 9" },
+    { id: "2", rocketPath: "/falconheavy", rocketName: "Falcon Heavy" },
+    { id: "3", rocketPath: "/starship", rocketName: "Starship" },
   ];
 
   return (

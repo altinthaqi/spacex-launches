@@ -4,12 +4,7 @@ import { NavLink } from "react-router-dom";
 
 function Logo() {
   return (
-    <Typography
-      variant="h6"
-      noWrap
-      component="h2"
-      sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-    >
+    <Typography variant="h6" noWrap component="h2" sx={{ flexGrow: 1 }}>
       <NavLink to="/" style={{ color: "white" }}>
         SpaceX
       </NavLink>
