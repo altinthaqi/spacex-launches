@@ -6,14 +6,17 @@ import SearchField from "../components/UI/SearchField";
 import Links from "./Links";
 import Logo from "./Logo";
 
-export default function Navigation() {
+export default function Navigation(props) {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
           <Logo />
           <Links />
-          <SearchField placeholder={"Find Mission..."} />
+          <SearchField
+            placeholder={"Find Mission..."}
+            onSearch={props.onSearch}
+          />
         </Toolbar>
       </AppBar>
     </Box>

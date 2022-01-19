@@ -7,6 +7,10 @@ import {
 } from "../../layout/NavigationStyled";
 
 function SearchField(props) {
+  const handleSearch = (e) => {
+    props.onSearch(e.target.value);
+  };
+
   return (
     <Search>
       <SearchIconWrapper>
@@ -15,6 +19,7 @@ function SearchField(props) {
       <StyledInputBase
         placeholder={props.placeholder}
         inputProps={{ "aria-label": "search" }}
+        onChange={handleSearch}
       />
     </Search>
   );

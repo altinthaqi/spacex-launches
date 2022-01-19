@@ -1,29 +1,23 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import { Link } from "react-router-dom";
+import LinkItem from "./LinkItem";
 
 function Links() {
   const rocketLinks = [
-    { rocketPath: "/falcon1", rocketName: "Falcon 1" },
-    { rocketPath: "/falcon9", rocketName: "Falcon 9" },
-    { rocketPath: "/falconheavy", rocketName: "Falcon Heavy" },
-    { rocketPath: "/starship", rocketName: "Starship" },
+    { id: "1", rocketPath: "/falcon1", rocketName: "Falcon 1" },
+    { id: "2", rocketPath: "/falcon9", rocketName: "Falcon 9" },
+    { id: "3", rocketPath: "/falconheavy", rocketName: "Falcon Heavy" },
+    { id: "4", rocketPath: "/starship", rocketName: "Starship" },
   ];
 
   return (
     <Box sx={{ display: "flex", flexGrow: 1 }}>
       {rocketLinks.map((rocket) => (
-        <Link to={rocket.rocketPath}>
-          <Typography
-            variant="body2"
-            component="p"
-            marginX={1}
-            sx={{ color: "white", display: { xs: "none", sm: "block" } }}
-          >
-            {rocket.rocketName}
-          </Typography>
-        </Link>
+        <LinkItem
+          key={rocket.id}
+          path={rocket.rocketPath}
+          name={rocket.rocketName}
+        />
       ))}
     </Box>
   );
