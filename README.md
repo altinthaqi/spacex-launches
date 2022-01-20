@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+<h1 align="center">SpaceX - Pabau Assignment</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">SpaceX is a web application used to view information of past SpaceX mission launches. Built on top of SpaceX - GraphQL, it uses GraphQL Client - Apollo Client for queries and data handling. You can view past launches, it's details, and it's rocket used in Nested Routes.</p>
 
-## Available Scripts
+## Links
 
-In the project directory, you can run:
+- [Repository](https://github.com/altinthaqi/pabau-assignment-spacex "SpaceX Repo")
 
-### `npm start`
+- [Live Deployment of the Project](https://www.spacex-launches.altinthaci.com "Live View")
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [SpaceX GraphQL](https://api.spacex.land/graphql/ "SpaceX GraphQL")
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## To use the project
 
-### `npm test`
+**Download** the project as **ZIP** or **Clone** it via:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone https://github.com/altinthaqi/pabau-assignment-spacex.git
+```
 
-### `npm run build`
+Go to repository's directory and install all dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After Node Modules are installed, you're ready to start the project:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm start
+```
 
-### `npm run eject`
+## Project's using these libraries: version
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- @apollo/client: 3.5.7,
+- @emotion/react: 11.7.1,
+- @emotion/styled: 11.6.0,
+- @mui/icons-material: 5.3.0,
+- @mui/material: 5.3.0,
+- graphql: 16.2.0,
+- react-router-dom: 6.2.1,
+- uuid: 8.3.2.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Fully responsive design (Mobile, Tablet, Desktop),
+- Integrates Apollo Client and connects to GraphQL,
+- Displays recent missions - launches,
+- You can search launches by input,
+- You can view the rocket used for each mission.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Paths:
 
-## Learn More
+- /
+- /:id
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Built With:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ReactJS
+- Apollo Client
+- Material UI
 
-### Code Splitting
+## Why Modular Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Each module has all the code related to it and only code from the module is imported,
+- Helps folder and component organization by not importing code between different modules.

@@ -2,7 +2,7 @@ import { useQuery, gql } from "@apollo/client";
 
 const GET_MISSIONS = gql`
   {
-    launchesPast(limit: 15) {
+    launchesPast(limit: 30) {
       mission_name
       launch_site {
         site_name_long
