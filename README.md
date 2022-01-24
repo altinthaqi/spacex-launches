@@ -1,4 +1,4 @@
-<h1 align="center">SpaceX - Pabau Assignment</h1>
+<h1 align="center">SpaceX</h1>
 
 <p align="center">SpaceX is a web application used to view information of past SpaceX mission launches. Built on top of SpaceX - GraphQL, it uses GraphQL Client - Apollo Client for queries and data handling. You can view past launches, it's details, and it's rocket used in Nested Routes.</p>
 
