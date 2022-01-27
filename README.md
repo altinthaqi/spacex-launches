@@ -4,7 +4,7 @@
 
 ## Links
 
-- [Repository](https://github.com/altinthaqi/pabau-assignment-spacex "SpaceX Repo")
+- [Repository](https://github.com/altinthaqi/spacex-launches.git "SpaceX Repo")
 
 - [Live Deployment of the Project](https://www.spacex-launches.altinthaci.com "Live View")
 
