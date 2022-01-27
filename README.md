@@ -15,7 +15,7 @@
 **Download** the project as **ZIP** or **Clone** it via:
 
 ```
-git clone https://github.com/altinthaqi/pabau-assignment-spacex.git
+git clone https://github.com/altinthaqi/spacex-launches.git
 ```
 
 Go to repository's directory and install all dependencies:
